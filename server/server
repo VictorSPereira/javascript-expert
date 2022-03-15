@@ -1,0 +1,7 @@
+server
+  service = tudo que é regra de negocio ou processamento
+  controler = intermediar a camada de apresentação e a camada de negocio
+  router = camada de apresentação
+  server = responsavel por criar o servidor
+  index = instancia o servidor e expoe para a web
+  config = tudo que for estatico no projeto
