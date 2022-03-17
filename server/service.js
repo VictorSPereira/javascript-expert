@@ -1,6 +1,6 @@
 import fs from 'fs'
 import fsPromises from 'fs/promises'
-import config from './config,js'
+import config from './config.js'
 import { join, extname } from 'path'
 const {
     dir: {
@@ -10,7 +10,7 @@ const {
 
 export class Service{
     createFileStream(filename){
-     return fs.createFileStream(filename)
+     return fs.createReadStream(filename)
     }
     async getFileInfo(file){
         // file = home/index.html
