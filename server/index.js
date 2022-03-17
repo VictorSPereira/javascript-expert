@@ -1,5 +1,6 @@
 import server from './server.js'
 import { logger } from './util.js'
+import config from './config.js'
 
-server.listen(3000)
-.on('listening', () => logger.info('server runing!!'))
+server.listen(config.port)
+.on('listening', () => logger.info(`server runing at ${config.port}`))
